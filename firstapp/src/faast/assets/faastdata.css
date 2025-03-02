@@ -1,0 +1,255 @@
+/* gcdata.module.css */
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  #faastbingo {
+    background: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+  }
+  
+  #faastnavigation {
+    background: #0093DD;
+  }
+  
+  .navbar-brand {
+    font-size: 30px;
+    color: white;
+    font-family: Roboto sans-serif;
+  }
+  
+  #faastcars {
+    background: #0093DD;
+  }
+  
+  #faastunique {
+    text-align: center;
+    margin-top: 120px;
+    color: black;
+    font-family: Roboto sans-serif;
+    min-height: 200px;
+  }
+  
+  .head1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing1 3.5s steps(40, end),
+      blink-caret .75s step-end ;
+  }
+  
+  /* The typing effect for head1 */
+  @keyframes typing1 {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #1E2022; }
+  }
+  
+  .head2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing2 3.5s steps(40, end) 3.5s, /* Adding delay for typing */
+      blink-caret .75s step-end  3.5s; /* Adding delay for blinking */
+  }
+  
+  /* The typing effect for head2 */
+  @keyframes typing2 {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  .head1 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 2;
+  }
+   
+  .head2 {
+    font-size: 30px;
+    font-weight: 490;
+  }
+  
+  #faastmain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6rem 10rem;
+    font-size: 20px;
+  }
+  
+  #faastsalman {
+    flex: 1;
+    overflow: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+    scroll-behavior: smooth;
+    width: 100%;
+    max-width: 70rem;
+    font-size: 20px;
+    
+  }
+  
+  .chat {
+    margin: 3rem;
+    padding: 3rem 2rem;
+    display: flex;
+    align-items: flex-start;
+    text-align: justify;
+    font-size: 13px;
+  }
+  
+  .chat > img {
+    width: 3.5rem;
+    object-fit: cover;
+    
+  }
+  
+  .faastbot {
+    background: #0093DD;
+    width: fit-content;
+    border-radius: 0.5rem;
+    color: white;
+    
+  }
+  
+  
+  #faastumair {
+    margin-top: 170px;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #faastabubakar {
+    padding: 0.5rem;
+    background: black;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    width: 68rem;
+    font-size: 20px;
+    
+  }
+  
+  #faastabubakar > input {
+    width: calc(100% - 3rem);
+    outline: none;
+    padding: 1.25rem;
+    color: white;
+    font-size: 20px;
+  }
+  
+  #faastabubakar> input, .send {
+    background: transparent;
+    border: none;
+  }
+  
+  #faastumair > p {
+    margin: 2rem 0;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 1200px) {
+    #faastmain {
+      margin: 5rem 7rem;
+    }
+    
+    #faastabubakar {
+      width: 60rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    #faastmain {
+      margin: 4rem 5rem;
+    }
+    
+    #faastabubakar {
+      width: 50rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #faastmain {
+      margin: 3rem 3rem;
+    }
+  
+    .head1 {
+      font-size: 40px;
+      font-weight: 500;
+    }
+    
+    .head2 {
+      font-size: 25px;
+      font-weight: 500;
+    }
+    
+    #faastabubakar {
+      width: 40rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #faastmain {
+      margin: 2rem 2rem;
+    }
+  
+    .head1 {
+      font-size: 30px;
+      font-weight: 500;
+    }
+    
+    .head2 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    
+    #faastabubakar {
+      width: 30rem;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    #faastmain {
+      margin: 1rem 1rem;
+    }
+  
+    .head1 {
+      font-size: 15px;
+      font-weight: 500;
+    }
+    
+    .head2 {
+      font-size: 10px;
+      font-weight: 500;
+    }
+    
+    #faastabubakar {
+      width: 25rem;
+    }
+  }
+  
